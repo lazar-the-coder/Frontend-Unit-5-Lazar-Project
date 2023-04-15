@@ -5,7 +5,7 @@ function searchItem() {
 
     for (i = 0; i < photoList.length; i++) {
         let photo = photoList[i];
-        let caption = photo.getAttribute("data-caption");
+        let caption = photo.getAttribute("data-caption").toLowerCase();
         if (caption.includes(filter)) {
             photo.style.display = "";
         } else {
